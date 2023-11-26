@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Academy Xi Phase-1</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
+</head>
+
+<!-- Navigation Bar-->
+<header>
+  <div class="site-logo">
+    <img src="images/melophile.png" alt="Melophile logo" />
+  </div>
+  <h1>Welcome to Melophile</h1>
+  <!--<input type="checkbox" id="mode">-->
+</header>
+
+<body>
+  <section id="main">
+    <div id="intro" class="content">
+      <div class="left">
+        <h2>Discover<br>New<br>Music</h2>
+      </div>
+
+      <div id="spotify" class="container">
+        <form action="">
+          <input type="hidden" id="hidden_token">
+          <div class="form-group row">
+            <label for="Genre" class="form-label">Genre:</label>
+            <select name="" id="select-genre" class="form-control">
+              <option>Select ...</option>
+            </select>
+          </div>
+
+          <div class="form-group row">
+            <label for="Genre" class="form-label">Playlists:</label>
+            <select name="" id="select-playlist" class="form-control">
+              <option>Select ...</option>
+            </select>
+          </div>
+
+          <div class="form-group row">
+            <button type="submit" id="btn-submit" class="btn btn-success">
+              Search
+            </button>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="sml-column">
+            <div class="list-group song-list"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <script src="scriptAPI.js"></script>
+</body>
+</html>
