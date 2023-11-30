@@ -1,117 +1,127 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-    --text-light: rgba(243, 244, 246, 0.9);
-    --primary-dark: rgba(55, 65, 81, 1);
-    --secondary-dark: rgba(55, 65, 81, 0.7);
-    --bg-light: rgba(243, 244, 246, 0.3);
-    --bg-btn: rgba(67, 56, 202, 0.8);
-    --search-light: #d9d7f4;
-    --search-med: #a19be4;
+  --text-light: rgba(243, 244, 246, 0.9);
+  --primary-dark: #313c53;
+  --secondary-dark: rgba(55, 65, 81, 0.7);
+  --bg-light: rgba(243, 244, 246, 0.1);
+  --bg-btn: rgba(156, 255, 0, 0.8);
+  --search-light: #d8ff9a;
+  --search-med: #baff4d;
 
-    background-color: var(--bg-light);
-    font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-dark);
+  font-family: "Poppins", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
-    background-color: var(--bg-light);
+  scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-    letter-spacing: 2px;
-    position: sticky;
-    top: 0;
-    background-color: var(--secondary-dark);
-    z-index: 2;
-    box-shadow: 10px 10px 20px -10px var(--search-light);
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  letter-spacing: 2px;
+  position: sticky;
+  top: 0;
+  background-color: var(--secondary-dark);
+  z-index: 2;
+  box-shadow: 10px 10px 20px -10px var(--search-light);
 }
 header > ion-icon {
-    color: var(--bg-btn);
-    font-size: 60px;
-    position: absolute;
-    left: 5%;
+  color: var(--bg-btn);
+  font-size: 60px;
+  position: absolute;
+  left: 5%;
 }
 
 h1 {
-    font-family: "Kanit", sans-serif;
-    color: var(--bg-btn);
-    margin: auto;
+  font-family: "Kanit", sans-serif;
+  color: var(--bg-btn);
+  margin: auto;
 }
 
 #search-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    position: sticky;
-    top: 100px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 100px;
 }
 #search-bar {
-    border: none;
-    width: 60%;
-    padding: 15px;
-    padding-left: 40px;
-    border-radius: 15px;
-    font-size: 15px;
+  border: none;
+  width: 60%;
+  padding: 15px;
+  padding-left: 40px;
+  border-radius: 15px;
+  font-size: 15px;
+  color: black;
+  background-color: var(--bg-light);
 }
 #search-container > .fa-magnifying-glass {
-    color: var(--search-med);
-    position: relative;
-    top: 18px;
-    z-index: 3;
-    font-size: 19px;
+  color: var(--search-med);
+  position: relative;
+  left: 28px;
+  top: 16px;
+  z-index: 3;
+  font-size: 19px;
 }
-
 
 #results-container {
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 90vw;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90vw;
 }
 .game-cards {
-    padding: 25px;
-    max-width: 250px;
-    border-radius: 15px;
-    display: grid;
-    place-items: center;
-    box-shadow: 1px 1px 20px -1px var(--search-light);
-    margin: 50px;
+  padding: 25px;
+  max-width: 250px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 1px 20px -1px var(--search-light);
+  margin: 50px;
 }
 .title {
-    margin: 20px auto;
-    text-align: center;
-    font-size: 1.2rem;    
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.2rem;
 }
 .genre {
-    margin-top: 15px;
-    font-size: 0.8rem;
+  margin-top: 15px;
+  font-size: 0.8rem;
 }
 .game-image {
-    width: 90%;
-    max-width: 400px;
-    object-fit: contain;
-    border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+#game-unavailable {
+  text-align: center;
+  letter-spacing: 2px;
+  display: none;
+  margin-top: 15%;
 }
 
 
-#game-unavailable {
-    text-align: center;
-    letter-spacing: 2px;
-    display: none;
-    margin-top: 15%;    
+.key {
+    font-size: 25px;
+    border: 1px solid salmon;
+    padding: 10px;
 }

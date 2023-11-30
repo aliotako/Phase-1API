@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Academy Xi Phase-1</title>
+    <link href="/style.css" rel="stylesheet"/>
+    <script src="link.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Academy Xi Phase-1</title>
-  <link href="/style.css" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
-</head>
+  <!-- Navigation Bar-->
+  <header>
+    <div class="site-logo">
+      <ion-icon name="game-controller-outline"></ion-icon>
+    </div>
+    <h1>Welcome to Gamerz</h1>
+    <!--<input type="checkbox" id="mode">-->
+  </header>
 
-<!-- Navigation Bar-->
-<header>
-  <div class="site-logo">
-    <ion-icon name="game-controller-outline"></ion-icon>
-  </div>
-  <h1>Welcome to Gamerz</h1>
-  <!--<input type="checkbox" id="mode">-->
-</header>
+  <body>
+    
+    <div id="search-container">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" id="search-bar" placeholder="Search games..." />
+    </div>
+<span class="key" id="printKey"></span>
+    <div id="results-container"></div>
+    <p id="game-unavailable"></p>
 
-<body>
-<div id="search-container">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search" id="search-bar" placeholder="Search games..."/>
-</div>
 
-<div id="results-container"></div>
-<p id="game-unavailable"></p>
-
-<script src="scriptAPI.js"></script>
-<script src="https://kit.fontawesome.com/d35d0fc2f1.js" crossorigin="anonymous"></script> 
-
-</body>
+    <footer>
+      <!-- link to rawg here. plus an "i made this"-->
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d35d0fc2f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

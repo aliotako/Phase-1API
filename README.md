@@ -19,6 +19,14 @@ Images:
 Website logo made by Ali Whiteford
 
 Thanks to:
-Daniel Puiatti and Prakash Shahi. Building a search engine that uses html, css and javaScript.
+Ali Aslan. Javascript Variable
+
+RAWG. 
 
 Sarah Okolo. Techniques for implementing search functions using javaScript.
+
+Daniel Puiatti and Prakash Shahi. Building a search engine that uses html, css and javaScript.
+
+
+
+
