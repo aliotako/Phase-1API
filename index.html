@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Academy Xi Phase-1</title>
-    <link href="/style.css" rel="stylesheet"/>
-    <script src="link.js"></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academy Xi Phase-1</title>
+  <link href="/style.css" rel="stylesheet" />
+  <script src="link.js"></script>
+  <script src="https://kit.fontawesome.com/d35d0fc2f1.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
 
-  <!-- Navigation Bar-->
-  <header>
-    <div class="site-logo">
-      <ion-icon name="game-controller-outline"></ion-icon>
+  <!-- core Bootstrap for CSS-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  
+</head>
+
+
+<!-- Navigation Bar-->
+<header>
+  <div class="site-logo">
+    <i class="bi bi-controller"></i>
+  </div>
+  <h1>Welcome to Gamerz</h1>
+  <!--<input type="checkbox" id="mode">-->
+</header>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="most-popular">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row gameList">                
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button hidden">
+                  <a href="javascript:void(0)">Load More Games</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <h1>Welcome to Gamerz</h1>
-    <!--<input type="checkbox" id="mode">-->
-  </header>
-
-  <body>
-    
-    <div id="search-container">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="search" id="search-bar" placeholder="Search games..." />
-    </div>
-<span class="key" id="printKey"></span>
-    <div id="results-container"></div>
-    <p id="game-unavailable"></p>
+  </div>
 
 
-    <footer>
-      <!-- link to rawg here. plus an "i made this"-->
-    </footer>
-    <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/d35d0fc2f1.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <footer>
+    <!-- link to rawg here. plus an "i made this"-->
+  </footer>
+  <script src="script.js"></script>
+  
+</body>
+
 </html>

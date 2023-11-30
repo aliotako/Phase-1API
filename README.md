@@ -13,7 +13,7 @@ Project description: Provide the ability for someone to search by genre for a ga
 26/11 have needed to restart this. og repo was linked to something i forked and 1: had forgotten about because was only looking at it from my files not github and 2: explains why there were push issues.
 
 Images:
-Website logo made by Ali Whiteford
+Website logo made by Kirill
 
 Thanks to:
 Ali Aslan. Javascript Variable

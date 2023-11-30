@@ -5,9 +5,8 @@ let secret = secretTwo.split("").reverse().join("");
 
 stepOne = MixString.join("").split("").reverse().join("");
 stepTwo = stepOne.split(secretOne);                 
-
 stepThree = stepTwo[0] + stepTwo[1];
-console.log(stepThree);
+
 key = stepThree + secret;
 
 
@@ -15,4 +14,3 @@ key = stepThree + secret;
 
 
 
-// bafed38dc2df4e6097710af21ce094a2
