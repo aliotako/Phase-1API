@@ -139,7 +139,7 @@ img {
 }
 .main-border-button a:hover {
   border-color:  #ccc;
-  background-color:  #ccc
+  background-color:  #ccc;
   color: var(--secondary-dark);
 }
 .border-no-active a {
