@@ -1,0 +1,19 @@
+{
+    "count": 2,
+    "next": "http://example.com",
+    "previous": "http://example.com",
+    "results": [
+      {
+        "id": 10,
+        "slug": "string",
+        "name": "string",
+        "released": "2023-11-30",
+        "tba": true,
+        "background_image": "http://example.com",
+        "rating": 0,
+        "rating_top": 0,
+        "ratings": {},
+        "ratings_count": 0, 
+      }
+    ]
+  }

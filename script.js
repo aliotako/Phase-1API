@@ -6,7 +6,9 @@ let nextGameListUrl = null;
 // conditions for updated values (date)
 //bafed38dc2df4e6097710af21ce094a2
 
-const url = `https://api.rawg.io/api/games?key=${key}&dates=2022-01-01,2023-11-301&ordering=-added`
+const key = 'bafed38dc2df4e6097710af21ce094a2';
+const url = `https://api.rawg.io/api/games?key=${key}&dates=2022-01-01,2023-11-30&ordering=-added`;
+
 
 
 const getPlatformStr = (platforms) => {
