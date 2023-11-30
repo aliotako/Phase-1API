@@ -21,7 +21,7 @@ Website logo made by Ali Whiteford
 Thanks to:
 Ali Aslan. Javascript Variable
 
-RAWG. 
+RAWG. Video Game database. Really appreciate the sharing of information and making it easy for the newbies Ü 
 
 Sarah Okolo. Techniques for implementing search functions using javaScript.
 
