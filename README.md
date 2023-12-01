@@ -1,28 +1,33 @@
 # Phase-1API
-the saga of talking to a brick wall
 
 Game Search API project
 
-Project description: Provide the ability for someone to search by genre for a game. This returns 10 options to choose from and then provides platforms available to play.
+This project required:
+● All interactions handled asynchronously and use json communication format
+● Must run on a single page
+● Use at least 3 distinct event listeners that enable interactivity
+● Return a collection of at least 5 objects, with each having 3 attributes
+● Implement at least 1 array iteration using array methods
 
-18/11 html+css framework done. layout designed in figma. search to be centred
-19/11 search has dropdown feature. eventListener can be added here (keydown atm)
-21/11 keeping styling seperate as api tests are not functioning
-22/11 first successful api fetch. not able to use data though
-23/11 needed ability to clear results container - added function
-26/11 have needed to restart this. og repo was linked to something i forked and 1: had forgotten about because was only looking at it from my files not github and 2: explains why there were push issues.
+Project description: 
+Showcase the latest trends in games as voted by peers. Results show which platforms you can use, star rating, release date and game cover art.
+
+*New! Also the ability for someone to search by genre. Complete feature yet to be fully functional.
+
+Project outcomes:
+Initial design was made in figma to examine different search app layouts. Naturally as the project progressed the interactive features changed. Challenges of working with APIs were frustrating, I had extended my skills by using one that required a key. The smug was real when the magic happened.
 
 Images:
-Website logo made by Kirill
+Website logo made by Kirill. Colour editing by moi
 
 Thanks to:
 Ali Aslan. Javascript Variable
 
 RAWG. Video Game database. Really appreciate the sharing of information and making it easy for the newbies Ü 
 
-Sarah Okolo. Techniques for implementing search functions using javaScript.
+Sarah Okolo. Techniques for implementing search functions using javaScript
 
-Daniel Puiatti and Prakash Shahi. Building a search engine that uses html, css and javaScript.
+Daniel Puiatti and Prakash Shahi. Building a search engine that uses html, css and javaScript
 
 
 
