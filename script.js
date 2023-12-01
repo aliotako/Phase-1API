@@ -1,4 +1,6 @@
-const loaderEl = document.getElementById('js-preloader');
+//import {key} from "./link";
+
+const loaderEl = document.getElementById('loadelement');
 const gameList = document.querySelector('.gameList');
 const loadMoreGamesBtn = document.querySelector('.main-button');
 let nextGameListUrl = null;
@@ -21,7 +23,7 @@ const getPlatformStr = (platforms) => {
 
 // fun loading animation and then fetch recent games rawg api
 function loadGames (url) {
-   loaderEl.classList.remove('loaded');
+   loaderEl.classList.remove("loaded");
 
   fetch(url)
     .then(response => response.json())
@@ -40,7 +42,7 @@ function loadGames (url) {
                     <span class="platforms">${getPlatformStr(game.parent_platforms)}</span>
                     </h4>
                     <ul>
-                        <li><i class=fa fa-star></i><span class="rating">${game.rating}</span></li>
+                        <li><i class="fa-solid fa-star"></i><span class="rating">${game.rating}</span></li>
                         <li><i class="fa-regular fa-calendar"></i><span class="date">${game.released}</span></li>
                     </ul>
                 </div>

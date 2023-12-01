@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--search-med);
+  color: rgba(156, 255, 0, 0.8);
 }
 
 header {
@@ -105,9 +105,9 @@ img {
 }
 
 /* preloader styling */
-.js-preloader,
-.js-preloader:before,
-.js-preloader:after {
+.preloader,
+.preloader:before,
+.preloader:after {
   border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
@@ -116,7 +116,7 @@ img {
   -webkit-animation: load7 1.8s infinite ease-in-out;
   animation: load7 1.8s infinite ease-in-out;
 }
-.js-preloader {
+.preloader {
   color: #f00c93;
   font-size: 10px;
   margin: 80px auto;
@@ -128,18 +128,18 @@ img {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
-.js-preloader:before,
-.js-preloader:after {
+.preloader:before,
+.preloader:after {
   content: '';
   position: absolute;
   top: 0;
 }
-.js-preloader:before {
+.preloader:before {
   left: -3.5em;
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
-.js-preloader:after {
+.preloader:after {
   left: 3.5em;
 }
 @-webkit-keyframes load7 {
@@ -170,65 +170,55 @@ img {
   background-color: var(--primary-dark);
   border-radius: 23px;
 }
-
 .most-popular .item {
-  background-color: var(--search-light);
+  background-color: var(--secondary-dark);
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
 }
-
 .most-popular .item .item {
+  color: black;
   padding: 0px;
   border-radius: 0px;
   background-color: transparent;
   margin-bottom: 0px;
 }
-
 .most-popular .item img {
   border-radius: 23px;
   max-height: 250px;
 }
-
 .most-popular .item h4 {
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 0px;
   display: inline-block;
 }
-
 .most-popular .item span {
-  color: var(--primary-dark);
+  color: black;
   display: block;
   margin-top: 7px;
   font-weight: 400;
 }
-
 .most-popular .item li span{
   display: inline-block;
-  color: var(--secondary-dark);
+  color: b;
   padding-left: 5px;
 }
-
 .most-popular .item ul {
   float: right;
   margin-top: 20px;
 }
-
 .most-popular .item ul li {
   text-align: right;
-  color: var(--text-light);
+  color: #ccc;
   font-size: 14px;
 }
-
 .most-popular .item ul li:first-child i {
   color: var(--bg-btn);
 }
-
 .most-popular .item ul li:last-child i {
   color: #f00c93;
 }
-
 .most-popular .main-button {
   text-align: center;
   margin-bottom: -53px;
