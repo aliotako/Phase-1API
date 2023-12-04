@@ -29,6 +29,11 @@ Sarah Okolo. Techniques for implementing search functions using javaScript
 
 Daniel Puiatti and Prakash Shahi. Building a search engine that uses html, css and javaScript
 
+Blog posts available from:
 
+Musings on the search bar: https://indd.adobe.com/view/6e1e4a51-4486-494c-87b4-348497bd2e49
 
+Working towards accessibility benchmarks: https://indd.adobe.com/view/d25e68aa-4646-47fc-a601-bb3baa33e447
+
+How to use JavaScript Fetch API: https://indd.adobe.com/view/7dfadd3f-b49e-4792-b10d-48427f745631
 
