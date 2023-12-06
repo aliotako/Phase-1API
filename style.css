@@ -26,7 +26,6 @@ a {
   color: #ccc;
   text-decoration: none;
 }
-
 a:hover {
   color: rgba(156, 255, 0, 0.8);
 }
@@ -48,7 +47,6 @@ header {
   position: absolute;
   left: 5%;
 }
-
 .site-logo img {
   width: 131px;
   height: 131px;
@@ -106,7 +104,6 @@ img {
   width: 400px;
   margin: -5.5rem 7em 0 0;
 }
-
 #search-bar,
 li {
   display: flex;
@@ -157,7 +154,6 @@ li {
   color: #b3b3b3;
 }
 
-
 /* preloader styling */
 .preloader,
 .preloader:before,
@@ -196,7 +192,6 @@ li {
 .preloader:after {
   left: 3.5em;
 }
-
 @-webkit-keyframes load7 {
   0%,
   80%,
@@ -223,7 +218,6 @@ li {
   display: none;
 }
 
-
 .gameList {
   justify-content: center;
   display: flex;
@@ -238,7 +232,6 @@ li {
   background-color: var(--primary-dark);
   border-radius: 23px;
 }
-
 .most-popular .game-card {
   width: 20%;
   background-color: var(--secondary-dark);
@@ -247,7 +240,6 @@ li {
   margin-bottom: 25px;
   margin-left: 25px;
 }
-
 .most-popular .game-card .item {
   color: black;
   padding: 0px;
@@ -255,51 +247,42 @@ li {
   background-color: transparent;
   margin-bottom: 0px;
 }
-
 .most-popular .game-card img {
   border-radius: 23px;
   max-height: 185px;
 }
-
 .most-popular .game-card h4 {
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 0px;
   display: inline-block;
 }
-
 .most-popular .game-card span {
   color: black;
   display: block;
   margin-top: 7px;
   font-weight: 400;
 }
-
 .most-popular .game-card li span {
   display: inline-block;
   color: b;
   padding-left: 5px;
 }
-
 .most-popular .game-card ul {
   float: right;
   margin-top: 20px;
 }
-
 .most-popular .game-card ul li {
   text-align: right;
   color: #ccc;
   font-size: 14px;
 }
-
 .most-popular .game-card ul li:first-child i {
   color: var(--bg-btn);
 }
-
 .most-popular .game-card ul li:last-child i {
   color: #f00c93;
 }
-
 .most-popular .main-button {
   text-align: center;
   margin-bottom: -53px;
@@ -320,12 +303,10 @@ li {
   position: relative;
   overflow: hidden;
 }
-
 .main-button a:hover {
   color: #baff4d;
   background-color: var(--secondary-dark);
 }
-
 .main-border-button a {
   font-size: 1em;
   color: var(--bg-btn);
@@ -341,18 +322,15 @@ li {
   position: relative;
   overflow: hidden;
 }
-
 .main-border-button a:hover {
   border-color: #ccc;
   background-color: #ccc;
   color: var(--secondary-dark);
 }
-
 .border-no-active a {
   border-color: var(--bg-light);
   color: #666;
 }
-
 .border-no-active a:hover {
   border-color: var(--bg-light);
   color: #666;
@@ -366,7 +344,20 @@ li {
   bottom: 5rem;
   right: 3em;
 }
-
 .backToTop-link:hover {
   color: var(--search-med);
+}
+
+/* footer*/
+footer {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+footer img {
+  width: 35px;
+  height: 35px;
+}
+footer a {
+  font-size: smaller;
 }
