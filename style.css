@@ -98,62 +98,6 @@ img {
   margin-left: 16em;
 }
 
-/* search wrapper styling */
-.wrapper {
-  float: right;
-  width: 400px;
-  margin: -5.5rem 7em 0 0;
-}
-#search-bar,
-li {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-#search-bar {
-  height: 42px;
-  padding: 0 20px;
-  font-size: 17px;
-  background: var(--bg-light);
-  border-radius: 7px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0 10px 25px var(--secondary-dark);
-}
-.wrapper.active #search-bar i {
-  transform: rotate(-180deg);
-}
-.content {  
-  display: none;          
-  padding: 20px;
-  margin-top: 15px;
-  border-radius: 7px;
-  background: var(--bg-light);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-.wrapper.active .content {
-  display: block;
-}
-.content .search {
-  position: relative;
-}
-.search input{
-  height: 50px;
-  width: 80%;
-  outline: none;
-  font-size: 17px;
-  border-radius: 5px;
-  padding: 0 20px 0 43px;
-  border: 1px solid var(--search-med);
-}
-.search input:focus{
-  padding-left: 42px;
-  border: 2px solid var(--bg-btn);
-}
-.search input::placeholder{
-  color: #b3b3b3;
-}
-
 /* preloader styling */
 .preloader,
 .preloader:before,
@@ -212,7 +156,6 @@ li {
     box-shadow: 0 2.5em 0 0;
   }
 }
-
 .loaded {
   transition: display 5s;
   display: none;
@@ -286,6 +229,35 @@ li {
 .most-popular .main-button {
   text-align: center;
   margin-bottom: -53px;
+}
+
+/* modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--primary-dark);
+}
+.modal-content {
+  background-color: var(--secondary-dark);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #666;
+  width: 80%;
+}
+.close {
+  color: blueviolet;
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: var(--search-med);
 }
 
 /* load more button styling */
