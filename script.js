@@ -1,7 +1,4 @@
 //import {key} from "./link";
-const searchBar = document.getElementById('search-bar');
-const searchResults = document.getElementById('search-results');
-
 const loaderEl = document.getElementById('loadelement');
 const gameList = document.querySelector('.gameList');
 const loadMoreGamesBtn = document.querySelector('.main-button');
@@ -11,61 +8,6 @@ let nextGameListUrl = null;
 
 //const key = 'bafed38dc2df4e6097710af21ce094a2';
 const url = `https://api.rawg.io/api/games?key=${key}&dates=2022-01-01,2023-11-30&ordering=-added`;
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    searchBar.addEventListener('input', debounce(handleSearch, 300));
-
-// limit rate of input event (API requests)
-    function debounce(func, delay) {
-        let timeout;
-        return function () {
-            const context = this;
-            const args = arguments;
-            clearTimeout(timeout);
-            timeout = setTimeout(() => {
-                func.apply(context, args);
-            }, delay);
-        };
-    }
-
-    async function handleSearch() {
-        const searchTerm = searchBar.value.trim();
-        if (searchTerm.length === 0) {
-
-// clear search results if sB empty          
-            searchResults.innerHTML = '';
-            return;
-        }
-        const apiUrl = `https://api.rawg.io/api/genres?key=${key}&search=${searchTerm}`;
-
-        try {
-            const response = await fetch(apiUrl);
-            const data = await response.json();
-            displayResults(data.results);
-        } catch (error) {
-            console.error('Oops! An error occurred', error);
-        }
-    }
-
-    function displayResults(results) {
-// Clear previous results
-        searchResults.innerHTML = '';
-
-        if (results.length === 0) {
-            searchResults.innerHTML = '<p>No results found</p>';
-            return;
-        }
-        results.forEach(result => {
-            const genreName = result.name;
-            const genreId = result.id;
-            const genreElement = document.createElement('p');
-            genreElement.textContent = `${genreName}`;
-
-            searchResults.appendChild(genreElement);
-        });
-    }
-});
 
 
 // map through platform data for name (playstation etc). if characters are greater than 60 show ...
@@ -118,9 +60,10 @@ function loadGames(url) {
             console.log('Oops! An error occurred:', error);
         });
 }
-
 //load games
 loadGames(url);
+
+// --- modal ---
 
 //  ---- EventListener for Load More button ----
 loadMoreGamesBtn.addEventListener('click', () => {
