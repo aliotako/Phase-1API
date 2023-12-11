@@ -5,15 +5,14 @@ const loadMoreGamesBtn = document.querySelector('.main-button');
 let nextGameListUrl = null;
 
 // conditions for updated values (date)
-
 const url = `https://api.rawg.io/api/games?key=${key}&dates=2022-01-01,2023-11-30&ordering=-added`;
 
 
-// map through platform data for name (playstation etc). if characters are greater than 60 show ...
+// map through platform data for name (playstation etc). if characters are greater than 40 show ...
 const getPlatformStr = platforms => {
     const platformStr = platforms.map(pl => pl.platform.name).join(',');
-    if (platformStr.length > 30) {
-        return platformStr.substring(0, 30) + '...';
+    if (platformStr.length > 20) {
+        return platformStr.substring(0, 20) + '...';
     }
     return platformStr;
 }
@@ -44,7 +43,6 @@ function loadGames(url) {
                     </ul>
                 </div>            
         `
-
                 //adding in each of the div elements to the gameList
                 gameList.insertAdjacentHTML('beforeend', gameItemEl)
             });
@@ -62,7 +60,6 @@ function loadGames(url) {
 //load games
 loadGames(url);
 
-// --- modal ---
 
 //  ---- EventListener for Load More button ----
 loadMoreGamesBtn.addEventListener('click', () => {
@@ -76,9 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let backToTop = document.querySelector('.backToTop');
 
     // ---- EventListener scroll to top - using console.log to find scroll point ----
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 720) {
-            backToTop.style.display = 'block';
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 720) {
+        backToTop.style.display = 'block';
         } else {
             backToTop.style.display = 'none';
         }
