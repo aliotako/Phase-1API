@@ -1,10 +1,10 @@
 # Phase-1API
 
-Game Search API project
+_Game Search API project_
 
 This is a single page web application that allows users to search for videogames by genre. It fetches data from the RAWG API and presents it in an interactive and user-friendly format.
 
-Features
+_Features:_
 Presents the top peer rated games on load
 Search for videogames by genre
 View detailed information about each game 
@@ -13,7 +13,7 @@ Responsive grid layout for game cards
 Dark mode toggle for improved user experience
 Error handling for unsuccessful API requests
 
-Technologies Used
+_Technologies Used:_
 HTML
 CSS
 JavaScript
@@ -25,15 +25,15 @@ The app will display all the games that match your search query
 Click on a game card to view further details about that game
 Click on the "Toggle Dark Mode" button to switch between light mode and dark mode
 
-This project required:
-● All interactions handled asynchronously and use json communication format
-● Must run on a single page
-● Use at least 3 distinct event listeners that enable interactivity
-● Return a collection of at least 5 objects, with each having 3 attributes
-● Implement at least 1 array iteration using array methods
+_This project required:_
++ All interactions handled asynchronously and use json communication format
++ Must run on a single page
++ Use at least 3 distinct event listeners that enable interactivity
++ Return a collection of at least 5 objects, with each having 3 attributes
++ Implement at least 1 array iteration using array methods
 
 
-Images:
+_Images:_
 Website logo made by Kirill. Colour editing by moi
 
 Thanks to:
