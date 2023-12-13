@@ -2,6 +2,29 @@
 
 Game Search API project
 
+This is a single page web application that allows users to search for videogames by genre. It fetches data from the RAWG API and presents it in an interactive and user-friendly format.
+
+Features
+Presents the top peer rated games on load
+Search for videogames by genre
+View detailed information about each game 
+Dynamic image loading (with placeholder for missing images)
+Responsive grid layout for game cards
+Dark mode toggle for improved user experience
+Error handling for unsuccessful API requests
+
+Technologies Used
+HTML
+CSS
+JavaScript
+RAWG API
+
+How to Use
+Within the searchbar begin entering a genre name. A responsive list will assist with refining choice
+The app will display all the games that match your search query
+Click on a game card to view further details about that game
+Click on the "Toggle Dark Mode" button to switch between light mode and dark mode
+
 This project required:
 ● All interactions handled asynchronously and use json communication format
 ● Must run on a single page
@@ -9,13 +32,6 @@ This project required:
 ● Return a collection of at least 5 objects, with each having 3 attributes
 ● Implement at least 1 array iteration using array methods
 
-Project description: 
-Showcase the latest trends in games as voted by peers. Results show which platforms you can use, star rating, release date and game cover art.
-
-*New! Also the ability for someone to search by genre. Complete feature yet to be fully functional.
-
-Project outcomes:
-Initial design was made in figma to examine different search app layouts. Naturally as the project progressed the interactive features changed. Challenges of working with APIs were frustrating, I had extended my skills by using one that required a key. The smug was real when the magic happened.
 
 Images:
 Website logo made by Kirill. Colour editing by moi
@@ -30,6 +46,5 @@ Sarah Okolo. Techniques for implementing search functions using javaScript
 Daniel Puiatti and Prakash Shahi. Building a search engine that uses html, css and javaScript
 
 Blog posts available from:
-
 https://digitalcraftcreative.wordpress.com/
 
